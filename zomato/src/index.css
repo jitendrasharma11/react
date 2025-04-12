@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+.bg-double{
+    background-image: url('/images/901001826baf04838b1bf505176ff0b11742453501.png'), url('/images/901001826baf04838b1bf505176ff0b11742453501.png');
+    background-position: left -42% top 0%, right -49% top 5%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain; 
+    margin-top: 30px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.background{
+    background:linear-gradient(0deg, #FFFFFF 0%, #FFEDEF 100%)
+}
+
+.carve{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    border-bottom-left-radius:70% ;
+    border-bottom-right-radius:70% ;
+
+}
+.bg-1{
+    background:  linear-gradient(to bottom, #FFEDEF , #FFF5F6);
+}
+.bg-3{
+    background:  linear-gradient(to bottom, #F2ECFF , #FAF8FE);
+
+}
+.bg-4{
+    background:  linear-gradient(to bottom, #FFEDEF , #FFF5F6);
+}
