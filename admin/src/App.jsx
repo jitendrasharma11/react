@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import LeftSide from './Pages/LeftSide'
 import { Outlet } from 'react-router'
 import Header from './Common/Header'
+import Footer from './Pages/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ function App() {
       <div className="">
         <Header/>
          <Outlet/>
+         <Footer/>
         </div>
      </div>
     </>

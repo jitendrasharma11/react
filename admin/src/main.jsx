@@ -9,6 +9,9 @@ import Login from './pages/Login'
 import App from './App'
 import AddColor from './Pages/AddColor'
 import User from './Pages/User'
+import Adduser from './Adduser'
+import ViewUser from './Pages/ViewUser'
+import Orders from './Pages/orders'
 
 
 createRoot(document.getElementById('root')).render(
@@ -20,7 +23,15 @@ createRoot(document.getElementById('root')).render(
 
         <Route element={ <App/> }>
             <Route path='/dashboard' element={<Dasboard/>} />
-            <Route path='/user' element={<User/>} />
+            
+            <Route path='dashboard/user'>
+                <Route path='add' element={<Adduser/>}/>
+                <Route path='view' element={<ViewUser/>}/>
+            </Route>
+            <Route path='dashboard/orders'>
+                <Route path='orders' element={<Orders/>}/>  
+            </Route>
+            
             
         </Route>
         
